@@ -1,2 +1,2 @@
 # Raehuman.github.io
-Website
+This is my website. It is currently very unfinished.
