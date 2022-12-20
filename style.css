@@ -1,0 +1,87 @@
+body {
+  background-color: #242424;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: #dbdbaf;
+}
+
+h1 {
+  background-color: #242424;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  color: #dbdbaf;
+}
+
+h2 {
+  background-color: #242424;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  color: #dbdbaf;
+}
+
+a {
+  color: hotpink;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  color: #dbdbaf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #8c8c70;
+  color: #242424;
+}
+
+.navbar a.active {
+  background-color: #dbdbaf;
+  color: #242424;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 56px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  overflow: hidden;
+  background-color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #8c8c70;
+  color: #242424;
+}
+
+.dropdown-content a.active {
+  background-color: #dbdbaf;
+  color: #242424;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
