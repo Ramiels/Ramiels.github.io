@@ -42,6 +42,208 @@ body {
 	font-size: 16px;
 	color: #FFFFFF;
 }
+body {
+  background-color: #242424;
+  font-family: 'Bombardier';
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+h1 {
+  background-color: #242424;
+  font-family: 'Bombardier';
+  font-size: 32px;
+  color: #dbdbaf;
+}
+
+h2 {
+  background-color: #242424;
+  font-family: 'Bombardier';
+  font-size: 22px;
+  color: #dbdbaf;
+}
+
+a {
+  color: hotpink;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  color: #dbdbaf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #8c8c70;
+  color: #242424;
+}
+
+.navbar a.active {
+  background-color: #dbdbaf;
+  color: #242424;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 56px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  overflow: hidden;
+  background-color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #8c8c70;
+  color: #242424;
+}
+
+.dropdown-content a.active {
+  background-color: #dbdbaf;
+  color: #242424;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@font-face {
+    font-family: 'bombardierregular';
+    src: url('bombardier-regular-webfont.woff2') format('woff2'),
+         url('bombardier-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RoR2 style types -- Credit to https://xuerian.github.io/RoR2LanguageEditor/ */
+
+.cIsHealth {
+	color: #e58262;
+}
+
+.cIsDamage {
+	color: #e5c962;
+}
+
+.cIsHealing {
+	color: #9ce562;
+}
+
+.cIsUtility {
+	color: #95cde5;
+}
+
+.cIsVoid {
+	color: #DD7AC6;
+}
+
+.cStack {
+	color: #8990a7;
+	font-size: 80%;
+}
+
+.cWorldEvent {
+	color: #ffc9f5;
+}
+
+.cArtifact {
+	color: #8a5bc0;
+}
+
+.cUserSetting {
+	color: #ffffd0;
+}
+
+.cDeath {
+	color: #fe7c7c;
+}
+
+.cSub {
+	color: #ccd3e0;
+}
+
+.cMono {
+	color: #8990a7;
+	letter-spacing: .5em;
+	line-height: 1.3em;
+}
+
+.cShrine {
+	color: #efeb1c;
+}
+
+.cEvent {
+	color: #8394b3;
+}
+
+.cHumanObjective {
+	color: #e4ef82;	
+}
+
+.cLunarObjective {
+	color: #b2b8ee;	
+}
+
+/* Item Rarities */
+
+.itemWhite{
+	color: rgb(255, 255, 255);
+}
+
+.itemGreen{
+	color: rgb(0, 255, 102);
+}
+
+.itemRed{
+	color: rgb(225, 0, 51);
+}
+
+.itemBoss{
+	color: rgb(255, 255, 0);
+}
+
+.itemLunar{
+	color: rgb(0, 102, 255);
+}
+
+.itemVoid{
+	color: rgb(198, 120, 180);
+}
+
+.itemEquipment{
+	color: rgb(225, 102, 51);
+}
+
+.itemUntiered{
+	color: rgb(100, 100, 100);
+}
+
+.itemName {
+	font-size: 20px;
+}
 </style>
 <body>
   <div class="navbar">
