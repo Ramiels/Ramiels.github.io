@@ -1,20 +1,20 @@
 body {
   background-color: #242424;
-  font-family: 'Montserrat';
+  font-family: 'Bombardier';
   font-size: 16px;
-  color: #dbdbaf;
+  color: #FFFFFF;
 }
 
 h1 {
   background-color: #242424;
-  font-family: 'Montserrat';
+  font-family: 'Bombardier';
   font-size: 32px;
   color: #dbdbaf;
 }
 
 h2 {
   background-color: #242424;
-  font-family: 'Montserrat';
+  font-family: 'Bombardier';
   font-size: 22px;
   color: #dbdbaf;
 }
@@ -84,4 +84,119 @@ a {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+@font-face {
+    font-family: 'bombardierregular';
+    src: url('bombardier-regular-webfont.woff2') format('woff2'),
+         url('bombardier-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RoR2 style types -- Credit to https://xuerian.github.io/RoR2LanguageEditor/ */
+
+.cIsHealth {
+	color: #e58262;
+}
+
+.cIsDamage {
+	color: #e5c962;
+}
+
+.cIsHealing {
+	color: #9ce562;
+}
+
+.cIsUtility {
+	color: #95cde5;
+}
+
+.cIsVoid {
+	color: #DD7AC6;
+}
+
+.cStack {
+	color: #8990a7;
+	font-size: 80%;
+}
+
+.cWorldEvent {
+	color: #ffc9f5;
+}
+
+.cArtifact {
+	color: #8a5bc0;
+}
+
+.cUserSetting {
+	color: #ffffd0;
+}
+
+.cDeath {
+	color: #fe7c7c;
+}
+
+.cSub {
+	color: #ccd3e0;
+}
+
+.cMono {
+	color: #8990a7;
+	letter-spacing: .5em;
+	line-height: 1.3em;
+}
+
+.cShrine {
+	color: #efeb1c;
+}
+
+.cEvent {
+	color: #8394b3;
+}
+
+.cHumanObjective {
+	color: #e4ef82;	
+}
+
+.cLunarObjective {
+	color: #b2b8ee;	
+}
+
+/* Item Rarities */
+
+.itemWhite{
+	color: rgb(255, 255, 255);
+}
+
+.itemGreen{
+	color: rgb(0, 255, 102);
+}
+
+.itemRed{
+	color: rgb(225, 0, 51);
+}
+
+.itemBoss{
+	color: rgb(255, 255, 0);
+}
+
+.itemLunar{
+	color: rgb(0, 102, 255);
+}
+
+.itemVoid{
+	color: rgb(198, 120, 180);
+}
+
+.itemEquipment{
+	color: rgb(225, 102, 51);
+}
+
+.itemUntiered{
+	color: rgb(100, 100, 100);
+}
+
+.itemName {
+	font-size: 20px;
 }
