@@ -29,6 +29,9 @@ th, td {
 .lunarTd {
 	border-color:black transparent transparent rgba(0, 102, 255, 0.25)
 }
+.equipmentTd {
+	border-color:black transparent transparent rgba(225, 102, 51, 0.25)
+}
 .untieredTd {
 	border-color:black transparent transparent rgba(100, 100, 100, 0.25)
 }
@@ -432,6 +435,25 @@ a {
 				<p>Use utility skill -> apply bleed on hit. Balances out the diluted item pool's lack of white DoT/bleed stacks, while providing a different but interesting mechanism to access it which works better for some survivors than others. Cooldown means that spammable utilities won't break it, but skills with shorter cooldowns are obviously way better here. E.G. Slide vs Diablo Strike</p>
 				<p>Due to stacking in amount applied on one hit, it works with tritips nicely in that it can apply a ton and random procs can sustain it.</p>
 				<p>April fools <span class="itemVoid">Box of Needleticks</span>?</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="commonTd">
+				<div class="itemname">
+					<p><span class="itemWhite">Common</span></p>
+					<img src="images/Placeholder_Tier1.png" width="120" height="120"/>
+					<p class="itemName">Bottled Bonfire</p>
+				</div>
+			</td>
+			<td>
+				<p>Every 30 seconds, place a <span class="cIsDamage">bonfire</span> that <span class=cIsHealing>heals</span> allies and <span class="cIsDamage">harms</span> enemies within <span class="cIsDamage">16m</span> <span class="cStack">(+4m per stack).</span></p>
+				<p><span class="cIsDamage">Ignite</span> enemies for <span class="cIsDamage">150%</span> base damage every second.</p>
+				<p><span class=cIsHealing>Heal</span> allies for <span class=cIsHealing>8%</span> of maximum health every second.</p>
+
+			</td>
+			<td>
+				<p>Sort of a cross between Warbanner, Desk plant, and Gasoline+FMP. If you can play around it and lure enemies into the radius, you can stack up burn on enemies for good damage, or you can sit inside the area to heal.</p>
+				<p>The bonfire lasts 30 seconds and spawns every 30s, so it effectively just gets moved every 30s.</p>
 			</td>
 		</tr>
 		<tr>
@@ -924,8 +946,167 @@ a {
 				<p>Granted in place of nanocrayons when stack size exceeds the transform threshold.</p>
 			</td>
 		</tr>
-		
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Pocket Crucible</p>
+				</div>
+			</td>
+			<td>
+				<p>Consume 1 item and grant a permanent stat bonus. Used items and scrap are prioritized.</p>
+			</td>
+			<td>
+				<p>Resembles a crucible with a handle.</p>
+				<p>Rolls on a table of stats a number of times tied to consumed rarity and grants stats from the table -- e.g. consume an empty bottle and roll 1 time, maybe get +hp. Consume a red scrap, roll the table several times, maybe roll +damage +speed +armor +armor +regen (maybe more). It is essentially "breaking down" useless untiered items and higher rarity but possibly situational items into base stats. Also makes benthic bloom runs less atrocious to play.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Everflowing Hourglass</p>
+				</div>
+			</td>
+			<td>
+				<p>Pause yourself, becoming immune and immobile for 6 seconds. Taking damage to below 25% health breaks this item..?</p>
+			</td>
+			<td>
+				<p>Resembles an ornate, pristine hourglass. The sand seems to float within, not entirely on one side or the other.</p>
+				<p>This can be used to wait out DoTs and usually lethal damage, heal up health, and generally take a breather in combat. The immobility ends before the immunity so you can move away from hazards.</p>
+				<p>When you're reduced to 25% HP, creates a large time freeze zone around you. Enemies and projectiles are stopped for 60 seconds, and this equipment turns into Unflowing Hourglass. I think this is a fun transform mechanic, and a unique way to obtain the other equipment.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Unflowing Hourglass</p>
+				</div>
+			</td>
+			<td>
+				<p>Pause an enemy for 10 seconds. </p>
+			</td>
+			<td>
+				<p>Resembles a cracked hourglass, except where the sand should be spilling out, it congeals into a solid grey mass.</p>
+				<p>Locks down a single target for a while, allowing you to focus on other enemies or take them down while they're helpless. Obviously better against bosses but good vs elites and tougher foes like elder lemurians. This means no movement, no skills, nothing. Somewhat like freeze but minus the instakill threshold.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Greed Sack</p>
+				</div>
+			</td>
+			<td>
+				<p>Passively generate 1 gold per second with interest, scaling with time. Use to collect stored gold.</p>
+			</td>
+			<td>
+				<p>Resembles a sack of gold and gems. Simple as that.</p>
+				<p>You can hold off on using this until you need gold, the longer you go without using it the more it generates.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Diviner's Secret</p>
+				</div>
+			</td>
+			<td>
+				<p>Reveal the contents of a chest.</p>
+			</td>
+			<td>
+				<p>Resembles a miniature x-ray display, with a cloth draped over it.</p>
+				<p>Can be used to see if a chest is worth purchasing.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Faulty Chronoanchor</p>
+				</div>
+			</td>
+			<td>
+				<p>Rewind time for yourself by 30 seconds, up to when you picked this equipment up.</p>
+			</td>
+			<td>
+				<p>Every second or so snapshot position, health, gold, items, etc. On use, sets your health items position etc to what they were up to 30s ago. Only track this while you have the equipment. Long cooldown. Ideally show an interpolated shadow of the player's recorded data 30s ago so they can know where/when they were.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Demo Disk</p>
+				</div>
+			</td>
+			<td>
+				<p>Temporarily gain 1 random item for 20 seconds. Item count scales with stages.</p>
+			</td>
+			<td>
+				<p>Resembles an old demo CD, maybe advertising some RoR-looking game.</p>
+				<p>Grants temporary items, ror1 style. These items are taken away afterwards. If the item would be corrupted, it instead grants the void item and takes one away after. Obviously blacklist some items, like shipping forms, void items, or other items that are expected to be kept for a while/between stages to even work. Long CD.</p>
+				<p>Item was conceptualized before junk drones, this should probably not be added now.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Capture Ball</p>
+				</div>
+			</td>
+			<td>
+				<p>Throw a ball that attempts to tame weakened enemies.</p>
+			</td>
+			<td>
+				<p>Resembles a legally distinct monster catching ball.</p>
+				<p>It's a pokeball. The lower HP an enemy is, the more likely it is to succeed. If it works, the enemy can be summoned by using the item, given a few stat bonuses. When they die, the item can capture a new enemy. Doesn't work on bosses, and reduced chance on elites.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="equipmentTd">
+				<div class="itemname">
+				<p><span class="itemEquipment">Equipment</span></p>
+				<img src="images/Placeholder_Equipment.png" width="120" height="120"/>
+				<p class="itemName">Scroll of Need</p>
+				</div>
+			</td>
+			<td>
+				<p>Grants you what you need. Consumed on use.</p>
+			</td>
+			<td>
+				<p>Resembles a scroll with a crude depiction of praying hands.</p>
+				<p>Grants you what you need most, based on a priority system. Low health instantly regens you to full and grants full barrier. Not enough gold for a basic chest grants you a ton of gold. Being surrounded by enemies damages them all. etc. Consumed on use. Blatant CotN reference.</p>
+			</td>
+		</tr>
+		<tr>
+			<td class="lunarTd">
+				<div class="itemname">
+				<p><span class="itemLunar">Lunar Equipment</span></p>
+				<img src="images/Placeholder_Lunar.png" width="120" height="120"/>
+				<p class="itemName">Obliteration Omen</p>
+				</div>
+			</td>
+			<td>
+				<p>Obliterate weak enemies, but lose health.</p>
+			</td>
+			<td>
+				<p>Resembles the obliteration obelisk, though much smaller and made of cracked glass. Hangs off a chain.</p>
+				<p>Instakill non-boss enemies on a short cooldown, though each use grants you E8-style reduced max health for the rest of the stage. Quite simple and silly. Health loss is based on what you kill -- elites and big enemies take more. Enemies you kill fracture into glass. Show an overlay over your healthbar to show you how much you'll lose for the targetted enemy. It'd be mildly amusing if targetting a boss would show a full healthbar, and kill you if you try to use it on them?</p>
+			</td>
+		</tr>
   </table>
-  
 </body>
 </html>
